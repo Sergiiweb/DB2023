@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4314e8ee-5619-4967-8acf-0411803e6060" name="Changes" comment="db mysql 1">
+      <change afterPath="$PROJECT_DIR$/hw1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +22,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a9195ad8-fd35-4399-9dde-0b4b3e594d64" />
+        <option name="url" value="https://github.com/Sergiiweb/DB2023.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2RSk5ctUlQnpcnY3o347gi30DEo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,7 +70,8 @@
       <workItem from="1687250688926" duration="929000" />
       <workItem from="1687251641116" duration="2657000" />
       <workItem from="1687254380265" duration="3622000" />
-      <workItem from="1687349838713" duration="377000" />
+      <workItem from="1687349838713" duration="958000" />
+      <workItem from="1687374142729" duration="327000" />
     </task>
     <task id="LOCAL-00001" summary="db mysql 1">
       <created>1687252686028</created>
@@ -79,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687268317046</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="db mysql 1">
+      <created>1687350232916</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687350232916</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
