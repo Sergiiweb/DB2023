@@ -71,7 +71,8 @@
       <workItem from="1687254380265" duration="3622000" />
       <workItem from="1687349838713" duration="958000" />
       <workItem from="1687374142729" duration="371000" />
-      <workItem from="1687508435894" duration="14555000" />
+      <workItem from="1687508435894" duration="15465000" />
+      <workItem from="1687539843557" duration="1741000" />
     </task>
     <task id="LOCAL-00001" summary="db mysql 1">
       <created>1687252686028</created>
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687519235988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="db mysql 2">
+      <created>1687524122318</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687524122318</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
