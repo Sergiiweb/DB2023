@@ -122,6 +122,8 @@ db.users.find({age: 25})
 // 1) Знайти всіх юзерів в кого вік менше за 20
 db.users.find({age: {$lt: 20}})
 
+db.getCollection('users').find({age: {$lt: 20}})
+
 // 2) Знайти всіх юзерів в котрих хоча б один з батьків Tamara або Petro
 db.users.find({parents: {$in: ['Tamara', 'Petro']}})
 
@@ -161,8 +163,12 @@ db.users.find({studying: {$exists: 0}})
 
 db.users.deleteMany({studying: {$exists: 0}})
 
+db.getCollection('users').deleteMany({studying: null})
+
 // 8) Знайти всіх юзерів в котрих в ім'я когось с батьків закінчується на 'na'
 db.users.find({parents: /.*na$/i})
+
+db.getCollection('users').find({'parents': /na$/})
 
 // 9) Всім юзерам котрі не вивчають python додати його
 db.users.find({
@@ -171,6 +177,11 @@ db.users.find({
 
 db.users.updateMany(
     {studying: {$not: {$in: ['python']}}},
+    {$push: {studying: 'python'}}
+    )
+
+db.getCollection('users').updateMany(
+    {studying: {$ne: 'python'}},
     {$push: {studying: 'python'}}
     )
 
@@ -191,24 +202,24 @@ db.users.find(
     )
 
 // 3) всіх юзерів старше 25 років позбавити батьків
-db.users.find({age:{$gt:25}})
+db.users.find({age: {$gt: 25}})
 
 db.users.updateMany(
-    {age:{$gt:25}},
-    {$unset:{parents:1}}
+    {age: {$gt: 25}},
+    {$unset: {parents: 1}}
     )
 
 // 4) видалити юзерів в котрих номер квартири та будинку дорівнює 45
 db.users.find({
     $and: [
-        {'address.flat':45},
-        {'address.house':45}
+        {'address.flat': 45},
+        {'address.house': 45}
     ]
 })
 
 db.users.deleteMany({
     $and: [
-        {'address.flat':45},
-        {'address.house':45}
+        {'address.flat': 45},
+        {'address.house': 45}
     ]
 })
